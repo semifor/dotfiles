@@ -1,0 +1,33 @@
+[submodule "vim/bundle/align"]
+	path = vim/bundle/align
+	url = git://github.com/vim-scripts/Align.git
+[submodule "vim/bundle/gist"]
+	path = vim/bundle/gist
+	url = git://github.com/mattn/gist-vim.git
+[submodule "vim/bundle/solarized"]
+	path = vim/bundle/solarized
+	url = git://github.com/altercation/vim-colors-solarized.git
+[submodule "vim/bundle/sensible"]
+	path = vim/bundle/sensible
+	url = git://github.com/tpope/vim-sensible.git
+[submodule "vim/bundle/gitgutter"]
+	path = vim/bundle/gitgutter
+	url = git://github.com/airblade/vim-gitgutter.git
+[submodule "vim/bundle/vimwiki"]
+	path = vim/bundle/vimwiki
+	url = git://github.com/Vimwiki/vimwiki.git
+[submodule "vim/bundle/ctrlp"]
+	path = vim/bundle/ctrlp
+	url = git://github.com/kien/ctrlp.vim.git
+[submodule "vim/bundle/fugitive"]
+	path = vim/bundle/fugitive
+	url = git://github.com/tpope/vim-fugitive.git
+[submodule "vim/bundle/unimpaired"]
+	path = vim/bundle/unimpaired
+	url = git://github.com/tpope/vim-unimpaired.git
+[submodule "vim/bundle/webapi"]
+	path = vim/bundle/webapi
+	url = git://github.com/mattn/webapi-vim.git
+[submodule "vim/bundle/perl"]
+	path = vim/bundle/perl
+	url = git://github.com/vim-perl/vim-perl.git
