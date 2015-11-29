@@ -31,3 +31,6 @@
 [submodule "vim/bundle/perl"]
 	path = vim/bundle/perl
 	url = git://github.com/vim-perl/vim-perl.git
+[submodule "vim/bundle/dispatch"]
+	path = vim/bundle/dispatch
+	url = git://github.com/tpope/vim-dispatch.git

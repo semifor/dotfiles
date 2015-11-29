@@ -2,7 +2,7 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
-set number hidden
+set number hidden visualbell
 set history=5000
 set statusline=%<%f\ %y%m%r\ %{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 
@@ -58,11 +58,11 @@ nnoremap <leader>gf :Glgrep<Space>
 nnoremap <leader>gg :Ggrep<Space>
 nnoremap <leader>gl :silent! Glog<CR>:copen<CR>
 nnoremap <leader>gm :Gmove<Space>
-nnoremap <leader>go :Gpull<Space>
 nnoremap <leader>gp :Gpush<Space>
 nnoremap <leader>gr :Gread<CR>
 nnoremap <leader>gs :Gstatus<CR>
 nnoremap <leader>gt :Git
+nnoremap <leader>gu :Gpull<Space>
 nnoremap <leader>gw :Gwrite<CR><CR>
 nnoremap <leader>gz :Gbrowse
 
