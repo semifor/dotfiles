@@ -58,12 +58,14 @@ nnoremap <leader>gf :Glgrep<Space>
 nnoremap <leader>gg :Ggrep<Space>
 nnoremap <leader>gl :silent! Glog<CR>:copen<CR>
 nnoremap <leader>gm :Gmove<Space>
-nnoremap <leader>gp :Gpush<Space>
+nnoremap <leader>gp :Dispatch! git push<CR>
 nnoremap <leader>gr :Gread<CR>
 nnoremap <leader>gs :Gstatus<CR>
 nnoremap <leader>gt :Git
-nnoremap <leader>gu :Gpull<Space>
+nnoremap <leader>gu :Dipatch! git pull<CR>
 nnoremap <leader>gw :Gwrite<CR><CR>
+nnoremap <leader>gxp :Dispatch! git push -f<CR>
+nnoremap <leader>gxu :Dispatch! git pull -r<CR>
 nnoremap <leader>gz :Gbrowse
 
 " Keep the buffer list clean by deleted buffers created by fugitive when they
