@@ -1,0 +1,97 @@
+snippet package "package template" b
+package ${1:`!v expand('%:p:s?.*lib/??:r:gs?/?::?')`};
+# ABSTRACT: $2
+
+use 5.14.2;
+use warnigs;
+
+$0
+
+1;
+endsnippet
+
+snippet if "if block" b
+if ( $1 ) {
+	$0
+}
+endsnippet
+
+snippet elsif "elsif block" b
+elsif ( $1 ) {
+	$0
+}
+endsnippet
+
+snippet else "else block" b
+else {
+	$0
+}
+endsnippet
+
+snippet for "for block" b
+for $1 ( $2 ) {
+	$0
+}
+endsnippet
+
+snippet while "while block" b
+while ( $1 ) {
+	$0
+}
+endsnippet
+
+snippet sub "function declaration" b
+sub $1 {
+	$0
+}
+endsnippet
+
+snippet '\S\s*\bsub' "anonymous sub" r
+sub { $0 };
+endsnippet
+
+## Moose ##
+
+snippet has "attribute declaration" b
+has $1 => (
+	is      => '${2:ro}',
+	lazy    => 1,
+	builder => '_build_$1',
+);
+
+sub _build_$1 {
+	$0
+}
+endsnippet
+
+snippet around "around modifier" b
+around $1 => sub {
+	my ( $next, $self ) = splice @_, 0, 2;
+
+	$0
+};
+endsnippet
+
+## Test::Spec
+
+snippet context "context block" b
+context '$1' => sub {
+	$0
+};
+endsnippet
+
+snippet describe "describe block" b
+describe '$1' => sub {
+	$0
+};
+endsnippet
+
+snippet it "it block" b
+it '$1' => sub {
+	$0
+};
+endsnippet
+
+snippet twe "throw wonk exception"
+throw_wonk_exception($1 => $0);
+endsnippet
